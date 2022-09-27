@@ -12,10 +12,6 @@ body {
     color: var(--black);
 }
 
-.my-bg-black {
-    background-color: var(--black);
-}
-
 .bg-green {
     background-color: var(--green);
 }
