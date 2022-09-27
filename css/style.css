@@ -112,6 +112,10 @@ header {
     background-color: var(--green);
 }
 
+.btn-success:hover {
+    background-color: rgb(29, 130, 110);
+}
+
 /***FOOTER***/
 .ico-social {
     width: 32px;
