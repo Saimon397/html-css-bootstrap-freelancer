@@ -36,6 +36,7 @@ body {
 img .avatar {
     width: 70%;
     max-width: 100%;
+    margin-top: 50px;
 }
 
 /***HEADER***/
