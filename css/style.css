@@ -12,31 +12,20 @@ body {
     color: var(--black);
 }
 
-.my-bg-black{
+.my-bg-black {
     background-color: var(--black);
 }
 
-.bg-green{
+.bg-green {
     background-color: var(--green);
 }
 
-.bg-grey{
+.bg-grey {
     background-color: var(--grey);
 }
 
-.bg-dark-grey{
+.bg-dark-grey {
     background-color: var(--dark-grey);
-}
-
-/***MAIN***/
-#hero {
-    padding-top: 100px;
-}
-
-img .avatar {
-    width: 70%;
-    max-width: 100%;
-    margin-top: 50px;
 }
 
 /***HEADER***/
@@ -46,4 +35,112 @@ header {
     height: 90px;
     top: 0;
     width: 100%;
+    z-index: 1000;
+}
+
+/***MAIN***/
+#hero {
+    padding-top: 100px;
+}
+
+#hero h1,
+#about h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+#portfolio h1 {
+    color: var(--dark-grey);
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.avatar {
+    width: 70%;
+    max-width: 100%;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.ico,
+.ico-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+
+.ico::before {
+    content: "";
+    display: block;
+    background-color: var(--white);
+    border: 2px solid var(--white);
+    width: 150px;
+}
+
+.ico::after {
+    content: "";
+    background-color: var(--white);
+    border: 2px solid var(--white);
+    display: block;
+    width: 150px;
+}
+
+.ico-2::before {
+    content: "";
+    background-color: var(--dark-grey);
+    border: 2px solid var(--dark-grey);
+    display: block;
+    width: 150px;
+}
+
+.ico-2::after {
+    content: "";
+    background-color: var(--dark-grey);
+    border: 2px solid var(--dark-grey);
+    display: block;
+    width: 150px;
+}
+
+.ico .fa-star,
+.ico-2 .fa-star {
+    margin: 0 20px;
+}
+
+.ico-2 .fa-star {
+    color: var(--dark-grey)
+}
+
+.btn-success {
+    background-color: var(--green);
+}
+
+/***FOOTER***/
+.ico-social {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    align-content: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.ico-social:hover.border-white {
+    border-color: var(--black) !important;
+}
+
+.ico-social:hover {
+    background-color: var(--green);
+    color: var(--black);
+    border: 1px solid var(--black);
+}
+
+footer a:hover {
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.c-size {
+    font-size: 13px;
 }
