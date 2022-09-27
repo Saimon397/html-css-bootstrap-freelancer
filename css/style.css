@@ -1,0 +1,48 @@
+:root {
+    --black: rgba(44, 62, 80, 1);
+    --green: rgba(26, 188, 156, 1);
+    --white: rgba(255, 255, 255, 1);
+    --grey: rgba(58, 84, 109, 1);
+    --dark-grey: rgba(44, 62, 80, 1);
+}
+
+/***COMMON***/
+body {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.my-bg-black{
+    background-color: var(--black);
+}
+
+.bg-green{
+    background-color: var(--green);
+}
+
+.bg-grey{
+    background-color: var(--grey);
+}
+
+.bg-dark-grey{
+    background-color: var(--dark-grey);
+}
+
+/***MAIN***/
+#hero {
+    padding-top: 100px;
+}
+
+img .avatar {
+    width: 70%;
+    max-width: 100%;
+}
+
+/***HEADER***/
+header {
+    background-color: var(--black);
+    position: fixed;
+    height: 90px;
+    top: 0;
+    width: 100%;
+}
