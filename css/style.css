@@ -34,6 +34,14 @@ header {
     z-index: 1000;
 }
 
+.nav-link {
+    background-color: var(--black);
+    border: 1px solid white;
+    width: 100px;
+    border-radius: 10%;
+    margin: 3px;
+}
+
 /***MAIN***/
 #hero {
     padding-top: 100px;
