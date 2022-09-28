@@ -1,5 +1,4 @@
 :root {
-    --black: rgba(44, 62, 80, 1);
     --green: rgba(26, 188, 156, 1);
     --white: rgba(255, 255, 255, 1);
     --grey: rgba(58, 84, 109, 1);
@@ -9,7 +8,7 @@
 /***COMMON***/
 body {
     background-color: var(--white);
-    color: var(--black);
+    color: var(--dark-grey);
 }
 
 .bg-green {
@@ -26,19 +25,23 @@ body {
 
 /***HEADER***/
 header {
-    background-color: var(--black);
+    background-color: var(--dark-grey);
     position: fixed;
     height: 90px;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 1100;
 }
 
 .nav-link {
-    background-color: var(--black);
+    background-color: var(--dark-grey);
     width: 100px;
     border-radius: 10%;
     margin: 3px;
+}
+
+.collapse .text-white:hover {
+    background-color: var(--green);
 }
 
 /***MAIN***/
@@ -123,6 +126,38 @@ header {
     background-color: rgb(29, 130, 110);
 }
 
+.plus {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 188, 156, 0.4);
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.plus i {
+    color: var(--white);
+    font-size: 80px;
+    padding: 0;
+}
+
+.card-pr {
+    position: relative;
+}
+
+.card-pr:hover .plus {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
 /***FOOTER***/
 .ico-social {
     width: 32px;
@@ -134,13 +169,13 @@ header {
 }
 
 .ico-social:hover.border-white {
-    border-color: var(--black) !important;
+    border-color: var(--dark-grey) !important;
 }
 
 .ico-social:hover {
     background-color: var(--green);
-    color: var(--black);
-    border: 1px solid var(--black);
+    color: var(--dark-grey);
+    border: 1px solid var(--dark-grey);
 }
 
 footer a:hover {
