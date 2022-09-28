@@ -27,17 +27,15 @@ body {
 header {
     background-color: var(--dark-grey);
     position: fixed;
-    height: 90px;
+    padding: 10px;
     top: 0;
     width: 100%;
     z-index: 1100;
 }
 
 .nav-link {
-    background-color: var(--dark-grey);
     width: 100px;
     border-radius: 10%;
-    margin: 3px;
 }
 
 .collapse .text-white:hover {
@@ -178,8 +176,12 @@ header {
     border: 1px solid var(--dark-grey);
 }
 
-footer a:hover {
+footer a {
     color: var(--green);
+    text-decoration: none;
+}
+
+footer a:hover {
     text-decoration: underline;
 }
 
